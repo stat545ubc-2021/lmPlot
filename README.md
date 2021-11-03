@@ -16,7 +16,7 @@ Work and report for each assignment is distributed in seperate folders in this r
 
 ## Deliverables 📔 : 
 
-1. [Assignment B-1](https://github.com/stat545ubc-2021/functions-eve-chen97/tree/main/Assignment%20B-1) (tag [b1.0](https://github.com/stat545ubc-2021/functions-eve-chen97/releases/tag/b1.0), released on **Nov 2, 2021**)
+1. [Assignment B-1](https://github.com/stat545ubc-2021/functions-eve-chen97/tree/main/Assignment%20B-1) (tag [b1.1](https://github.com/stat545ubc-2021/functions-eve-chen97/releases/tag/b1.1), released on **Nov 2, 2021**)
     
     This assignment covers making a function in R, documenting it, and testing it.
     - Markdown: [assignment-b1.md](https://github.com/stat545ubc-2021/functions-eve-chen97/blob/main/Assignment%20B-1/assignment-b1.md)
