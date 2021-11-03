@@ -20,7 +20,7 @@ Work and report for each assignment is distributed in seperate folders in this r
     
     This assignment covers making a function in R, documenting it, and testing it.
     - Markdown: [assignment-b1.md](https://github.com/stat545ubc-2021/functions-eve-chen97/blob/main/Assignment%20B-1/assignment-b1.md)
-    - R Markdown with source code: [assignment-b1.rmd](https://github.com/stat545ubc-2021/functions-eve-chen97/blob/main/Assignment%20B-1/assignment-b1.md)
+    - R Markdown with source code: [assignment-b1.rmd](https://github.com/stat545ubc-2021/functions-eve-chen97/blob/main/Assignment%20B-1/assignment-b1.rmd)
     - Figures: [assignment-b1_files folder](https://github.com/stat545ubc-2021/functions-eve-chen97/tree/main/Assignment%20B-1/assignment-b1_files/figure-gfm)
     
 
