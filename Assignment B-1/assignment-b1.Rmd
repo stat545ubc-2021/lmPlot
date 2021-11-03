@@ -11,20 +11,34 @@ I would like to create a function that create an `lm` object and plot the graph 
 
 The function is generated below:
 
-```{r}
+```{r, message = FALSE}
 library(tidyverse)
 
 #' A Linear Models Visualization Function
 #'
-#' Select two columns from a data frame: two numeric columns for fitting linear models and visualization.
-#' You can also decide whether to remove N/A values from geom_point, as well as choosing the color and size of axis titles. 
-#' The function must have numeric x and y arguments and will stop if given other data types.
+#' Select two columns from a data frame: two numeric columns for 
+#' fitting linear models and visualization.
+#' You can also decide whether to remove N/A values from geom_point, 
+#' as well as choosing the color and size of axis titles. 
+#' The function must have numeric x and y arguments and will stop 
+#' if given other data types.
 #'
 #' @param data Tibble or data frame that you want to select from.
-#' @param x Numeric column name. This will be the x variable being used for the model and the graph.
-#' @param y Numeric column name. This will be the y variable being used for the model and the graph.
-#' @param na.rm Logical value to decide whether or not to remove `NA` values when graphing. This is named consistently with `ggplots` functions. If `FALSE`, the default, missing values are removed with a warning. If `TRUE`, missing values are silently removed.
-#' @return The model graph as an class of `ggplot` object. This plot is determined by the selected numeric columns of the data. 
+#' 
+#' @param x Numeric column name. This will be the x variable being 
+#' used for the model and the graph.
+#' 
+#' @param y Numeric column name. This will be the y variable being 
+#' used for the model and the graph.
+#' 
+#' @param na.rm Logical value to decide whether or not to 
+#' remove `NA` values when graphing. 
+#' This is named consistently with `ggplots` functions. 
+#' If `FALSE`, missing values are removed with a warning. 
+#' If `TRUE`, the default, missing values are silently removed.
+#' 
+#' @return The model graph as an class of `ggplot` object. 
+#' This plot is determined by the selected numeric columns of the data. 
 #' Throws an error if `x` and `y` are not the numeric type.
 
 plot_lm <- function (data, x, y, na.rm = TRUE) {
@@ -56,14 +70,15 @@ plot_lm <- function (data, x, y, na.rm = TRUE) {
 
 ### Examples of Usage
 
-1. Example that works: Plot the relationship between `cyl` - Number of cylinders and `mpg` - Miles/(US) gallon of the `mtcars` data.
+* **Example that works:** Plot the relationship between `cyl` - Number of cylinders and `mpg` - Miles/(US) gallon of the `mtcars` data.
 
 ```{r, error = TRUE}
 plot_lm(mtcars, cyl, mpg, na.rm = T)
 ```
 
-2. Example of errors: Choose the `continent` column from the `gapminder` dataset as the `x` variable. It's not `numeric` so can't fit in the linear model.
+* **Example of errors:** Choose the `continent` column from the `gapminder` dataset as the `x` variable. It's not `numeric` so can't fit in the linear model.
 ```{r, error = TRUE}
+library(gapminder)
 plot_lm(gapminder, continent, lifeExp)
 ```
 
@@ -71,10 +86,8 @@ plot_lm(gapminder, continent, lifeExp)
 
 Given that the columns must be numeric for the x and y axis, I am testing if there my stop error function is working when the data provided is not numeric. I also test that the scales for x and y are labelled corrected from the column names provided.
 
-```{r}
-library(gapminder)
+```{r, message = FALSE}
 library(testthat)
-
 
 ## Incorrect column types throw an error
 test_that("Non-numeric values for x axis", {
