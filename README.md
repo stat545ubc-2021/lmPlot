@@ -5,7 +5,7 @@ This repository will contain **Eve (Yixuan) Chen**'s work for assignments of *ST
 
 Some activities so far include:
 - [x] **Assignment B-1**: Making and testing a function. Due November 2, 2021.
-- [ ] **Assignment B-2**: Due November 20, 2021
+- [ ] **Assignment B-2**: Wrapping that function in an R package. Due November 20, 2021
 - [ ] **Assignment B-3**: Due November 27, 2021
 - [ ] **Assignment B-4**: Due December 8, 2021
 
