@@ -1,34 +1,36 @@
-STAT 545B 2021 Assignments - Eve Chen
-================================
 
-This repository will contain **Eve (Yixuan) Chen**'s work for assignments of *STAT 545B* (Winter term 1 2021). 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
-Some activities so far include:
-- [x] **Assignment B-1**: Making and testing a function. Due November 2, 2021.
-- [ ] **Assignment B-2**: Wrapping that function in an R package. Due November 20, 2021
-- [ ] **Assignment B-3**: Due November 27, 2021
-- [ ] **Assignment B-4**: Due December 8, 2021
+# lmPlot
 
-## Files in the repository 📂:
+<!-- badges: start -->
+<!-- badges: end -->
 
-Work and report for each assignment is distributed in seperate folders in this repository. Each folder would contain: `1.` the R markdown files with source code, `2.` the knitted markdown files, `3.` a sub-folder of attached files like figures from the knitted markdown and `4.` a README file explaining the work contained in this assignment.
+The goal of lmPlot is to create an `lm` object and plot the graph that
+can be repeated when choosing different variables.
 
-**Instructions on how to open and render the markdown (`.md`) and R markdown (`.rmd`) files：**
-- [x]  `.md` files : The markdown files are knitted from the R markdown, it can be read and edited with a normal text editor. But the robust and reproducible way is to edit on the source code in R markdown file of the same name, then knit and update the corresponding markdown file.
-- [x] `.rmd` files: The R Markdown is a file format for making dynamic documents with R. You can use Integrated Development Environment like RStudio to open the files, edit and run the code embedded. You can also render the files into markdown, HTML or PDF formats with RStudio IDE.
+The function `plot_lm()` takes in two arguments from the provided tibble
+column variables and creates a graph based on the linear model from the
+variables.
 
-## Deliverables 📔 : 
+## Installation
 
-1. [Assignment B-1](https://github.com/stat545ubc-2021/functions-eve-chen97/tree/main/Assignment%20B-1) (tag [b1.1](https://github.com/stat545ubc-2021/functions-eve-chen97/releases/tag/b1.1), released on **Nov 2, 2021**)
-    
-    This assignment covers making a function in R, documenting it, and testing it.
-    - Markdown: [assignment-b1.md](https://github.com/stat545ubc-2021/functions-eve-chen97/blob/main/Assignment%20B-1/assignment-b1.md)
-    - R Markdown with source code: [assignment-b1.rmd](https://github.com/stat545ubc-2021/functions-eve-chen97/blob/main/Assignment%20B-1/assignment-b1.Rmd)
-    - Figures: [assignment-b1_files folder](https://github.com/stat545ubc-2021/functions-eve-chen97/tree/main/Assignment%20B-1/assignment-b1_files/figure-gfm)
-    
-2. [Assignment B-2](https://github.com/stat545ubc-2021/functions-eve-chen97/tree/main/Assignment%20B-2) (tag [b2.0](https://github.com/stat545ubc-2021/functions-eve-chen97/releases/tag/b2.0), released on **Nov 20, 2021**)
-    
-    In this assignment, we will wrap the function created in assignment 1 into an R package.
+You can install the development version from
+[GitHub](https://github.com/) with:
 
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2021/lmPlot")
+```
 
-**Thanks for viewing and commenting on my work! 😃**
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(lmPlot)
+plot_lm(mtcars, cyl, mpg, na.rm = T)
+#> `geom_smooth()` using formula 'y ~ x'
+```
+
+<img src="man/figures/README-example-1.png" width="100%" />

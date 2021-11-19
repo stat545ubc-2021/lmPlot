@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# lmPlot
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of lmPlot is to create an `lm` object and plot the graph that can be repeated when choosing different variables. 
+
+The function `plot_lm()` takes in two arguments from the provided tibble column variables and creates a graph based on the linear model from the variables. 
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2021/lmPlot")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(lmPlot)
+plot_lm(mtcars, cyl, mpg, na.rm = T)
+```

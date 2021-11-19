@@ -3,8 +3,8 @@ Title: What the Package Does (One Line, Title Case)
 Version: 0.1.0
 Authors@R: 
     person("Eve", "Chen", , "evechen97@gmail.com", role = c("aut", "cre"))
-Description: Select two columns from a data frame: two numeric columns for 
-    fitting a linear model and visualization as a scatter plot.
+Description: This is a function to fit two variables from a given data frame 
+    into a linear model of and visualize it. 
     The function must have numeric x and y arguments and will stop
     if given other data types.
 License: MIT + file LICENSE
