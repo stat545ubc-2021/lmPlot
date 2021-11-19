@@ -1,13 +1,20 @@
 Package: lmPlot
 Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Eve", "Chen", , "evechen97@gmail.com", role = c("aut", "cre"))
+Description: Select two columns from a data frame: two numeric columns for 
+    fitting a linear model and visualization as a scatter plot.
+    The function must have numeric x and y arguments and will stop
+    if given other data types.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Imports: 
+    dplyr,
+    ggplot2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
