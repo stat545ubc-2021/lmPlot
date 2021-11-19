@@ -7,7 +7,7 @@
 <!-- badges: end -->
 
 The goal of lmPlot is to fit two variables from a given data frame into
-a linear model of and visualize it.
+a linear model and visualize it.
 
 The function `plot_lm()` takes in two arguments from the provided tibble
 column variables and creates a graph based on the linear model from the
@@ -25,7 +25,9 @@ devtools::install_github("stat545ubc-2021/lmPlot")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to plot the linear model of
+two variables: `cyl` - Number of cylinders and `mpg` - Miles/(US) gallon
+from the `mtcars` data:
 
 ``` r
 library(lmPlot)
