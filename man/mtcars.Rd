@@ -24,7 +24,7 @@ A data frame with 32 observations on 11 (numeric) variables:
 \source{
 Henderson and Velleman (1981),
 Building multiple regression models interactively.
-\emph{Biometrics}, \strong{37}, 391–411.
+\emph{Biometrics}, \strong{37}, 391-411.
 }
 \usage{
 mtcars
