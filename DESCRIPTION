@@ -1,6 +1,6 @@
 Package: lmPlot
 Title: What the Package Does (One Line, Title Case)
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     person("Eve", "Chen", , "evechen97@gmail.com", role = c("aut", "cre"))
 Description: This is a function to fit two variables from a given data frame 
