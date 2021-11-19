@@ -6,8 +6,8 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of lmPlot is to create an `lm` object and plot the graph that
-can be repeated when choosing different variables.
+The goal of lmPlot is to fit two variables from a given data frame into
+a linear model of and visualize it.
 
 The function `plot_lm()` takes in two arguments from the provided tibble
 column variables and creates a graph based on the linear model from the
@@ -15,7 +15,7 @@ variables.
 
 ## Installation
 
-You can install the development version from
+lmPlot is not yet on CRAN. You can install the development version from
 [GitHub](https://github.com/) with:
 
 ``` r
